@@ -1,0 +1,201 @@
+
+body{
+	background:url('../images/kampus.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	padding-top:80px;
+	overflow-x:hidden;
+}
+
+.body{
+	*background:rgba(51,122,183,0.3) ;
+	background:rgba(255,255,255,0.8) ;
+	*position:fixed;
+	*width:100%; height:100%;
+	*overflow:scroll;
+}
+
+.panel{
+	border:none;
+}
+
+.panel-heading{
+	background:rgba(51,122,183,1) !important;
+	color:white !important;
+	border:none;
+	font-weight:bold;
+}
+
+.header{
+	position:fixed;
+	width:100%; height:80px;
+	top:0;
+	background:rgba(51,122,183,1);
+	color:white;
+	padding:0px;
+	z-index:999999;
+}
+.header .form-group{
+	padding:0px !important;
+	margin:0px !important;
+}
+.header .header-content{
+	height:80px;
+}
+.header .logo{
+	position:relative;
+	height:100%;
+}
+.header div{
+	*border:1px solid black;
+}
+.header .logo div:nth-child(1), .header .logo div:nth-child(2){
+	position:relative;
+	height:100%;
+	padding:0px;
+}
+.header .logo div:nth-child(1) img{
+	margin-top:10px;
+	height:60px;
+}
+.header .logo div:nth-child(2){
+	padding:15px;
+}
+.header .logo div:nth-child(2) h1{
+	font-size:1.8em;
+	font-weight:bold;
+	margin:0px;
+}
+
+.banner{
+	width:100%;
+	height:450px;
+	background:url('../images/mahasiswa.jpg');
+	background-size:cover;
+	background-position:100%;
+	padding-top:5%;
+}
+.banner-menu{
+	width:250px;
+}
+.banner .menu{
+	position:relative;
+	width:100%;
+	background:none !important;
+	border:none !important;
+}
+.menu .panel-body{
+	padding:0px !important;
+	*margin:0px !important;
+	background:none !important;
+	border:none !important;
+}
+.menu > .panel-body ul{
+	padding:0px; margin:0px;
+	list-style:none;
+	width:100%;
+	z-index:10;
+}
+.menu > .panel-body > .first-last-menu-border > li:first-child{
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+}
+.menu > .panel-body > .first-last-menu-border > li:last-child{
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+}
+.menu > .panel-body ul  li{
+	padding:0px; margin:0px;	
+	background:rgba(51,122,183,0.9) ;	
+	transition: all 0.5s;
+	position:relative;
+}
+.menu > .panel-body ul  li.has-child:after{
+	left: 90%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.menu > .panel-body ul li a{
+	display:table;		
+	color:white;
+	width:100%;
+	height:30px;
+	padding:10px;
+	text-decoration:none;
+	font-size:0.9em;
+	font-weight:bold;
+	content: "\f000"; 
+}
+.menu > .panel-body ul li:hover{
+	background:rgba(0,81,150,1) ;	
+}
+
+.menu > .panel-body > ul li:hover > ul {
+	display:block;
+	*visibility:visible;
+	opacity:1;
+}
+.menu > .panel-body > ul li ul{
+	display:none;
+	*visibility:visible;
+	z-index:0;
+	position:absolute;
+	margin-top:-38px;
+	left:100%; 
+	opacity:0;
+	transition: all .3s;
+}
+
+.menu > .panel-body ul.li-white li{
+	background:white;
+	color:black;
+}
+.menu > .panel-body ul.li-white li h4, .menu > .panel-body ul.li-white li label{
+	color:rgba(51,122,183,1);
+}
+.menu > .panel-body ul.li-white li:hover h4, .menu > .panel-body ul.li-white li:hover label{
+	color:rgba(51,122,183,1);
+	text-decoration:underline;
+}
+.menu > .panel-body ul.li-white li p{
+	color:black;
+	font-weight:normal;
+}
+.menu > .panel-body ul.li-white li i{
+	color:gray;
+	font-weight:normal;
+}
+
+
+.menu > .panel-body ul.li-line li{
+	border-bottom:1px dotted #CCCCCC;
+}
+
+.content .panel{
+	margin-bottom:0px;
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

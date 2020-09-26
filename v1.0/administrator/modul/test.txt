@@ -1,0 +1,10 @@
+SELECT '1' as 'p_row', '1' as 'no', 
+					upper(r.kode_rencana_studi) as 'prime', 
+					upper(r.kode_ajaran) as 'none', 
+					(select upper(concat(tahun,' ( ',semester,' ) ')) from tahun_ajaran where kode_ajaran = r.kode_ajaran ) as 'none',
+					(select upper(concat(jenjang,' ',nama_prodi)) from prodi_identitas where kode_prodi = r.kode_prodi ) as 'none',
+					upper(r.semester) as 'smt', 
+					(select upper(concat(nama_mk,'')) from mata_kuliah where kode_mk = r.kode_mk ) as 'mata kuliah',
+					(select upper(concat(sks,'')) from mata_kuliah where kode_mk = r.kode_mk ) as 'sks',
+					(select upper(concat(nama_mk,' (',sks,' sks)')) from mata_kuliah where kode_mk = r.kode_mk_syarat ) as 'none' 
+					from rencana_studi r  where r.kode_ajaran='15161' and r.kode_prodi='050101'  order by r.semester limit 0, 100

@@ -1,0 +1,137 @@
+
+body{
+	padding-top:55px;
+	
+	background:rgba(51,122,183,0.3) ;
+	*background:url('../images/mahasiswa.jpg') no-repeat center center fixed; -webkit-background-size: cover;
+}
+
+.body{
+	padding:0px;
+	*padding-top:40px;
+}
+.body div{
+	*border:1px solid black;
+}
+
+h4{
+	margin:0px !important;
+}
+
+.panel{
+	margin-bottom:5px !important;
+}
+
+.footer-page{
+	bottom:0;
+	height:30px;
+	display:none;
+}
+.footer-page nav, .footer-page a{
+	padding:3px !important;
+}
+
+.header-page, .footer-page{
+	position:fixed;
+	z-index:99999;
+	width:100%;
+}
+
+.header-page{
+	top:0;
+}
+
+.header-page nav, .footer-page nav{
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin-bottom:0px !important;
+}
+
+.header-page .navbar-default, .footer-page .navbar-default{
+	background:rgba(51,122,183,1) ;
+	border:none; 
+}
+.header-page .navbar-default .dropdown a:focus{
+	background:#1D5E96;
+}
+.header-page .navbar-default .dropdown-menu{
+	background:#1D5E96; width:250px;
+}
+.header-page .navbar-default .dropdown-menu a{
+	padding-top:10px; padding-bottom:10px;
+}
+.header-page .navbar-default .dropdown-menu a:hover{
+	background:#0B406E; 
+}
+.header-page .navbar-default a, .footer-page .navbar-default a{
+	color:white !important;
+}
+
+.navbar-default{
+	margin-bottom:5px !important;
+}
+
+.modal{
+	width:auto;
+	min-width:300px;
+}
+
+*.form-group{margin-right:20px;}
+*.form-group label, #mahasiswa .form-group select, #mahasiswa .form-group input{margin-right:5px; font-size:12px; }
+
+.menu{
+	width:100% !important;
+}
+
+.menu div > label:first-child{
+	width:31%;	
+}
+.menu div > img{
+	background:red; width:70%; height:100px; margin-bottom:10px;
+}
+
+.page-content{
+	*margin-left:17%;
+}
+
+.page-content .panel-body{
+	padding:5px !important;
+}
+
+table{
+	font-size:12px;
+}
+table thead{
+	background:#577492;
+	font-weight:bold;
+	color:white;
+}
+table thead td{
+	border-color:#577492 !important;
+}
+
+.table-header-fixed thead{
+	position:absolute;	
+	margin-top:-1px;
+	z-index:9999;
+}
+.table-header-fixed thead tr{
+	*border:1px solid black;
+}
+
+.table-responsive{
+	max-height:420px;
+}
+
+.table-responsive-auto{
+	max-height:1000px;
+}
+
+.container .navbar-default{
+	margin-bottom:5px !important;
+}
+
+.pagination {
+	margin:0px;
+}

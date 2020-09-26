@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo Bootstrap Scrollspy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font-family: 'Quicksand';
+  }
+  ul.nav-pills {
+      top: 250px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 500px;
+      font-size: 28px;
+      padding: 30px;
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#Scrollspy">
+<div class="container-fluid" style="height: 250px;">
+  <center>
+    <h1>DEMO Bootstrap Scrollspy </h1>
+    <h3>by: hasyemiraws</h3>
+  </center>
+</div>
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="Scrollspy">
+
+      <ul class="nav nav-pills nav-stacked">
+        <h3><strong>Side Navigation</strong></h3>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#followme">Follow Me</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="about">    
+        <h1><em>About Me</em></h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+      <div id="followme"> 
+        <h1>Follow Me</h1>
+        <div class="row">
+           <div class="col-sm-4">
+            <img src="http://ajr.org/wp-content/themes/AJR-theme/images/twitter-icon.png" class="img-responsive">
+            <h2>@hasyemiraws</h2>
+           </div>
+           <div class="col-sm-4">
+            <img src="http://www.allwesttrophies.com/v/vspfiles/assets/images/facebook_round_logo.png" class="img-responsive">
+            <h2>hasyemi rafsanjani</h2>
+           </div>
+           <div class="col-sm-4">
+            <img src="http://www.palmspringslife.com/Instagram-Round-256.png" class="img-responsive">
+            <h2>hasyemiraws</h2>
+           </div>         
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+</body>
+</html>   

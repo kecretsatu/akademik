@@ -1,0 +1,9 @@
+SELECT '1' as 'p_row', '1' as 'no', 
+						upper(r.kode_jadwal) as 'prime', 
+						upper(concat(DATE_FORMAT(r.mulai, '%H:%i'),' - ',DATE_FORMAT(r.selesai, '%H:%i'))) as 'waktu', 
+						(select upper(concat(nama_mk,' (',sks,' sks)')) from mata_kuliah where kode_mk = r.kode_mk ) as 'mata kuliah',
+						(select upper(nama_kelas) from kelas where kode_kelas = r.kode_kelas ) as 'kelas',
+						upper(r.kode_ruang) as 'ruang',
+						(select upper(concat(jenjang,' ', nama_prodi)) from prodi_identitas where kode_prodi = r.kode_prodi ) as 'program studi' 
+						from jadwal_kuliah r  where r.hari='jumat'  and r.nidn = '08390100041'
+						order by r.mulai limit 0, 100
